@@ -1,7 +1,7 @@
 # U3.W7: Designing Schemas
 
 
-#### I worked on this challenge [by myself, with: ]
+#### I worked on this challenge [by myself, with: Hing Huynh]
 
 
 ## Release 0: Student Roster Schema

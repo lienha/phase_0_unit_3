@@ -1,6 +1,6 @@
 # U3.W7: BONUS Using the SQLite Gem
 
-# I worked on this challenge [by myself, with:]
+# I worked on this challenge [by myself, with: Hing Huynh]
 
 require 'sqlite3'
 
@@ -14,13 +14,20 @@ def print_arizona_reps
   az_reps.each { |rep| puts rep }
 end
 
-def print_longest_serving_reps(minimum_years)  #sorry guys, oracle needs me, i didn't finish this!
-  puts "LONGEST SERVING REPRESENTATIVES"
-  puts $db.execute("SELECT name FROM congress_members WHERE years_in_congress > #{minimum_years}")
+def print_some_other_states_reps
+  puts "NJ, NY, ME, FL, and AK REPRESENTATIVES "
+  other_reps = $db.execute("SELECT name FROM congress_members WHERE location IN ('NJ', 'NY', 'ME', 'FL', 'AK')")
+  other_reps.each { |rep| puts rep }
 end
 
-def print_lowest_grade_level_speakers
-  puts "LOWEST GRADE LEVEL SPEAKERS (less than < 8th grade)"
+def print_longest_serving_reps(minimum_years)  #sorry guys, oracle needs me, i didn't finish this!
+  puts "LONGEST SERVING REPRESENTATIVES"
+  $db.execute("SELECT name, years_in_congress FROM congress_members WHERE years_in_congress > #{minimum_years}").each {|x,y| puts "#{x} - #{y}" }
+end
+
+def print_lowest_grade_level_speakers(minimum_grade_level)
+  puts "LOWEST GRADE LEVEL SPEAKERS (less than < #{minimum_grade_level})"
+  puts $db.execute("SELECT name FROM congress_members WHERE grade_current < 8")
 end
 
 def print_separator
@@ -31,20 +38,19 @@ end
 
 
 print_arizona_reps
-
 print_separator
 
-print_longest_serving_reps(35)
-# TODO - Print out the number of years served as well as the name of the longest running reps
+# Print out the number of years served as well as the name of the longest running reps
 # output should look like:  Rep. C. W. Bill Young - 41 years
-
+print_longest_serving_reps(35)
 print_separator
-print_lowest_grade_level_speakers 
-# TODO - Need to be able to pass the grade level as an argument, look in schema for "grade_current" column
 
-# TODO - Make a method to print the following states representatives as well:
+# Need to be able to pass the grade level as an argument, look in schema for "grade_current" column
+print_lowest_grade_level_speakers(8)
+print_separator
+# Make a method to print the following states representatives as well:
 # (New Jersey, New York, Maine, Florida, and Alaska)
-
+print_some_other_states_reps
 
 ##### BONUS #######
 # TODO (bonus) - Stop SQL injection attacks!  Statmaster learned that interpolation of variables in SQL statements leaves some security vulnerabilities.  Use the google to figure out how to protect from this type of attack.
