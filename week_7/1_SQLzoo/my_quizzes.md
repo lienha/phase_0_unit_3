@@ -6,7 +6,7 @@
 
 ### My Quiz Results:
 
-![alt text] ()
+![alt text] (https://github.com/lienha/phase_0_unit_3/blob/master/week_7/imgs/my_quizzes.jpg "my_quizzes")
 
 
 
