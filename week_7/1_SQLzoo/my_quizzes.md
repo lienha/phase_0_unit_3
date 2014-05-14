@@ -6,7 +6,7 @@
 
 ### My Quiz Results:
 
-![alt text](https://raw.githubusercontent.com/lienha/phase_0_unit_3/master/week_7/imgs/my_quizzes.jpg "my_quizzes")
+![a link](https://raw.githubusercontent.com/lienha/phase_0_unit_3/master/week_7/imgs/my_quizzes.jpg "my_quizzes")
 
 
 
