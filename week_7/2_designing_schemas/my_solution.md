@@ -5,7 +5,7 @@
 
 
 ## Release 0: Student Roster Schema
-<!-- display your image inline here -->
+![Student](https://github.com/lienha/phase_0_unit_3/blob/master/week_7/imgs/students.jpg)
 
 
 ## Release 1: One to Many Schema
