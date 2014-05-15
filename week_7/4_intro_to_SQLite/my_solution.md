@@ -71,7 +71,7 @@ sqlite> SELECT * FROM users;
 id          first_name  last_name   email                  created_at           updated_at           nicknames 
 ----------  ----------  ----------  ---------------------  -------------------  -------------------  ----------
 1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:54  2014-05-13 20:53:54  Kimchee   
-2           Lienha      Carleton    lhariver@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55            
+2           Lienha      Carleton    myemail@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55            
 sqlite> 
 
 sqlite> UPDATE users
@@ -81,7 +81,7 @@ sqlite> SELECT * FROM users;
 id          first_name  last_name   email                  created_at           updated_at           nicknames 
 ----------  ----------  ----------  ---------------------  -------------------  -------------------  ----------
 1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:54  2014-05-13 20:53:54  Kimchee   
-2           Lienha      Carleton    lhariver@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55  Nhim      
+2           Lienha      Carleton    myemail@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55  Nhim      
 sqlite> 
 ```
 ## Release 4: Change a value
@@ -96,7 +96,7 @@ sqlite> SELECT * FROM users;
 id          first_name  last_name   email                  created_at           updated_at           nicknames  
 ----------  ----------  ----------  ---------------------  -------------------  -------------------  -----------
 1           Kimmy       Lin         kimmy@devbootcamp.com  2014-05-13 20:53:54  2014-05-13 20:53:54  Ninja Coder
-2           Lienha      Carleton    lhariver@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55  Nhim       
+2           Lienha      Carleton    myemail@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55  Nhim       
 sqlite> 
 ```
 
