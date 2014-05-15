@@ -1,4 +1,4 @@
-Last login: Wed May 14 17:36:27 on ttys004
+##Last login: Wed May 14 17:36:27 on ttys004
 LH:4_SQL Lienha$ sqlite3 my_database.db
 -- Loading resources from /Users/Lienha/.sqliterc
 
