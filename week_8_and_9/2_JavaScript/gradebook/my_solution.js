@@ -17,11 +17,42 @@ var scores = [ [80, 70, 70, 100],
                [85, 80, 90, 90],
                [75, 70, 80, 75],
                [100, 90, 95, 85] ]
+var average = function(array) {
+  total = 0;
+  for (var i=0 ; i < array.length; i++) {
+      total += array[i];
+    };
+    return total/array.length
+};
+var gradebook = {
+  Joseph: testScore = {}
+  Joseph.testScore = score[0]
+  },
 
+  Susan: {
+    testScore : score[1]
+  },
 
+  William: {
+    testScore : score[2]
+  }
+  Elizabeth:
+}
 
+var gradebook = {
+  students[0]: score[0]
+  Joseph: testscore
+  Susan: testscore
+  Wiliam: testscore
+  Elizabeth: testscore
+  addScore = function {
 
+  }
+};
 
+gradebook.Joseph.testScore = score
+gradebook.Joseph.getAverage 
+gradebook.addScore("Susan", 80)
 
 // __________________________________________
 // Write your code below.
