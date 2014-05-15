@@ -1,0 +1,1 @@
+[internet_schema](https://raw.githubusercontent.com/lienha/phase_0_unit_3/master/week_8_and_9/4_SQL/your_own_db/internet_schema.jpg)
