@@ -11,7 +11,7 @@ The relationship between `users` and `tweets` is:
 one-to-many because a user can have many tweets but each tweet only belongs to one user 
 
 ## Release 3: Schema Design
-[twitter](https://github.com/lienha/phase_0_unit_3/master/week_7/imgs/twitter.jpg)
+![twitter](https://raw.githubusercontent.com/lienha/phase_0_unit_3/master/week_7/imgs/twitter.jpg)
 
 ## Release 4: SQL Statements
 select tweets from a specific user
