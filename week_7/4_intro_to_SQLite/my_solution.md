@@ -35,12 +35,12 @@ id          first_name  last_name   email                  created_at           
 sqlite> INSERT INTO users
    ...> (first_name, last_name, email, created_at, updated_at)
    ...> VALUES
-   ...> ('Lienha', 'Carleton', 'lhariver@gmail.com', DATETIME('now'), DATETIME('now'));
+   ...> ('Lienha', 'Carleton', 'myemail@gmail.com', DATETIME('now'), DATETIME('now'));
 sqlite> SELECT * FROM users;
 id          first_name  last_name   email                  created_at           updated_at         
 ----------  ----------  ----------  ---------------------  -------------------  -------------------
 1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:54  2014-05-13 20:53:54
-2           Lienha      Carleton    lhariver@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55
+2           Lienha      Carleton    myemail@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55
 sqlite> 
 ```
 
@@ -55,7 +55,7 @@ sqlite> SELECT * FROM users;
 id          first_name  last_name   email                  created_at           updated_at         
 ----------  ----------  ----------  ---------------------  -------------------  -------------------
 1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:54  2014-05-13 20:53:54
-2           Lienha      Carleton    lhariver@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55
+2           Lienha      Carleton    myemail@gmail.com     2014-05-13 20:57:55  2014-05-13 20:57:55
 sqlite> 
 ```
 ## Release 3: Add a column
