@@ -29,5 +29,5 @@ This is movie --> theater
 This is customer --> order --> items ordered
 [many-to-many](https://github.com/lienha/phase_0_unit_3/blob/master/week_7/imgs/many-to-many-restaurant.jpg)
 ## Release 5: Reflection
-
+Creating schema is repetative. What thought to be simple in designing own schema took longer than we had thought.
 

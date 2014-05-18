@@ -7,7 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
+I worked on this challenge [by myself, with: Hing Huynh]
 
 */
 
@@ -17,59 +17,74 @@ var scores = [ [80, 70, 70, 100],
                [85, 80, 90, 90],
                [75, 70, 80, 75],
                [100, 90, 95, 85] ]
-var average = function(array) {
-  total = 0;
-  for (var i=0 ; i < array.length; i++) {
-      total += array[i];
-    };
-    return total/array.length
-};
-var gradebook = {
-  Joseph: testScore = {}
-  Joseph.testScore = score[0]
-  },
 
-  Susan: {
-    testScore : score[1]
-  },
-
-  William: {
-    testScore : score[2]
-  }
-  Elizabeth:
-}
-
-var gradebook = {
-  students[0]: score[0]
-  Joseph: testscore
-  Susan: testscore
-  Wiliam: testscore
-  Elizabeth: testscore
-  addScore = function {
-
-  }
-};
-
-gradebook.Joseph.testScore = score
-gradebook.Joseph.getAverage 
-gradebook.addScore("Susan", 80)
 
 // __________________________________________
 // Write your code below.
 
+function average(array){
+    total = 0;
+    for (var i=0 ; i < array.length; i++)
+    {
+      total += array[i];
+    }
+      return total/array.length;
+};
 
+var gradebook = {
+    Joseph: { testScores: scores[0] },
 
+    Susan: { testScores: scores[1] },
 
+    William: { testScores: scores[2] },
 
+    Elizabeth: { testScores: scores[3] },
+
+   getAverage: function getaverage(name){
+        for (var i=0; i < students.length; i++) 
+            {
+            if (name === students[i]) {
+                return average(scores[i]);
+            }        
+        }
+    },
+
+    addScore: function addscore(name, score){
+        for (var i=0; i < students.length; i++)
+            {
+            if (name === students[i]) {
+                scores[i].push(score);
+            }        
+        }
+    }
+
+};
 
 // __________________________________________
 // Refactored Solution
 
+function average(array){
+    total = 0;
+    for (var i=0 ; i < array.length; i++){
+      total += array[i];
+    }
+      return total/array.length;
+};
 
+var gradebook = {
+    Joseph: { testScores: scores[0] },
+    Susan: { testScores: scores[1] },
+    William: { testScores: scores[2] },
+    Elizabeth: { testScores: scores[3] },
 
+    getAverage: function getaverage(name){
+        return average(scores[students.indexOf(name)]);
+    },
 
-
-
+    addScore: function addscore(name, score){
+        scores[students.indexOf(name)].push(score);
+    }
+};
 
 
 // __________________________________________

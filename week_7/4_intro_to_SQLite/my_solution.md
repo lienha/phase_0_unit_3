@@ -50,7 +50,6 @@ sqlite> INSERT INTO users
    ...> (first_name, last_name, email, created_at, updated_at)
    ...> VALUES
    ...> ('Kimmey', 'Lin', 'kimmy@devbootcamp.com', DATETIME('now'), DATETIME('now'));
-Error: column email is not unique
 sqlite> SELECT * FROM users;
 id          first_name  last_name   email                  created_at           updated_at         
 ----------  ----------  ----------  ---------------------  -------------------  -------------------
@@ -101,4 +100,4 @@ sqlite>
 ```
 
 ## Release 5: Reflect
-<!-- Add your reflection here -->
+This exercise is straight-forward. I didn't have problems except for typos here and there.

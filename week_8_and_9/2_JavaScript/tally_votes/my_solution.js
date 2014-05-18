@@ -1,6 +1,6 @@
 // U3.W8-9: Gradebook from Names and Scores
 
-// I worked on this challenge [by myself, with:]
+// I worked on this challenge [by myself, with: Hing Huynh]
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -53,7 +53,6 @@ voteCount would be ...
 
 */
 
-
 /* Once the votes have been tallied, assign each officer position the name of the 
 student who received the most votes. */
 var officers = {
@@ -68,17 +67,30 @@ var officers = {
 
 // __________________________________________
 // Initial Solution
+for (var vote in votes) {
+  for (var position in votes[vote]) {
+    if (voteCount[position][votes[vote][position]] == undefined) {
+      voteCount[position][votes[vote][position]] = 1;
+    }
+    else {
+        voteCount[position][votes[vote][position]] += 1;
+    }
+  }
+}
 
-
-
-
-
+for (var officer in voteCount) {
+  var highest_votes = 0;
+  for (var name in voteCount[officer]) {
+    if (voteCount[officer][name] > highest_votes) {
+      highest_votes = voteCount[officer][name];
+      officers[officer] = name;
+    }
+  }
+}
 
 
 // __________________________________________
 // Refactored Solution
-
-
 
 
 
@@ -93,7 +105,6 @@ var officers = {
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
-
 
 function assert(test, message, test_number) {
   if (!test) {

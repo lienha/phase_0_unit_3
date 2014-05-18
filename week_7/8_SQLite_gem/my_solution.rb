@@ -73,3 +73,4 @@ print_some_other_states_reps
 #   > #{minimum_years}")`.  Try to explain this as clearly as possible for 
 # your fellow students.  
 # If you're having trouble, find someone to pair on this explanation with you.
+# This excerse is more fun to do as I got to see how SQL incorporated in Ruby.
