@@ -97,7 +97,7 @@ for (var officer in voteCount) {
 
 // __________________________________________
 // Reflection
-
+// This exercise is hard as my experience of javascript is thin. 
 
 
 

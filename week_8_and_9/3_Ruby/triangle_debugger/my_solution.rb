@@ -64,3 +64,4 @@ assert { valid_triangle?(50, 70, 200) == false }
 assert { valid_triangle?(0, 0, 0) == false}
 
 # 5. Reflection 
+# This is a good exercise to learn to read errors.

@@ -41,7 +41,7 @@ end
 
 # 4. Refactored Solution
 
-
+# I don't see how to refactor it further
 
 
 
@@ -67,3 +67,4 @@ assert { rectangle.==(square) == false }
 
 
 # 5. Reflection 
+# This exercise is straight-forward. I didn't run into any problems.
