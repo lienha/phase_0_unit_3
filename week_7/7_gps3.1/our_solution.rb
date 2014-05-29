@@ -59,10 +59,7 @@ class Grocery_list
     end
     
     def remove(item, qty = @list[item])
-        unless @list.keys.include?(item)
-            puts "#{item} not in the list"
-            return
-        end
+        puts "#{item} not in the list" unless @list.keys.include?(item)
         @list[item] -= qty.to_i.abs
         @list.delete(item) if @list[item] <= 0
     end

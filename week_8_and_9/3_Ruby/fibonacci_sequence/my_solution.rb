@@ -28,7 +28,7 @@ end
 def is_fibonacci?(number)
   arr = [0,1]
   true if number == 0 || number == 1
-  while arr[arr.length - 1] <= number
+  while arr[arr.length - 1] < number
     arr << arr[arr.length - 1] + arr[arr.length - 2]
   end   
   arr.include?(number) 
